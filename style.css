@@ -6,3 +6,35 @@
 body{
     background: rgba(140, 196, 97, 1);
 }
+
+.top{
+    border:2px solid white;
+    margin: 0 auto;
+    width: 500px;
+    border-radius: 10px;
+}
+.mainbox{
+    display: flex;
+    justify-content:space-between; 
+    margin: 10px;
+}
+.left-list{
+    font-size: 1.5em;
+    list-style-type: none;
+}
+.right{
+    display:flex;
+}
+
+.top-right-box1.top-right-box2{
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    padding: .3em;
+}
+.top-right-box1{
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    padding: .3em;
+}
