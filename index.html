@@ -1,79 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <container id="main">
-        <div class="top">
-            <div class="mainbox">
-                <div class="left">
-                    <div class="top-box1">
-                        <ul class="left-list">
-                            <li>ROCK</li>
-                            <li>PAPER</li>
-                            <li>SCISSORS</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="right">
-                    <div class="top-right-box1">
-                        <div><p>COMPUTER <br>SCORE</p></div>
-                        <div><p>0</p></div>
-                    </div>
-                    <div class="top-right-box2">
-                        <div><p>YOUR<br>SCORE</p></div>
-                        <div><p>0</p></div>
-                    </div>
-                </div>
+      <div class="top">
+        <div class="mainbox">
+          <div class="left">
+            <div class="top-box1">
+              <ul class="left-list">
+                <li>ROCK</li>
+                <li>PAPER</li>
+                <li>SCISSORS</li>
+              </ul>
             </div>
+          </div>
+          <div class="right">
+            <div class="top-right-box1">
+              <div>
+                <p>COMPUTER <br />SCORE</p>
+              </div>
+              <div class="comp-score-no"><p>0</p></div>
+            </div>
+            <div class="top-right-box2">
+              <div>
+                <p>YOUR<br />SCORE</p>
+              </div>
+              <div class="your-score-no"><p>0</p></div>
+            </div>
+          </div>
         </div>
+      </div>
 
-
-
-<div class="center-content">
-    <div class="center-left">
-
-    </div>
-    <div>
-        <div class="center-mid">
-            <h1>YOU WIN</h1>
-            <p>AGAINST PC</p>
-        <input type="button" value="PLAY AGIAN">
-        <input type="button" value="REPLAY">
-        </div>
-        <div class="center-right"></div>
-    </div>
-    <div></div>
-</div>
-
-
-<div class="bottom-right-btns">
-
-    <div class="rules">
-        <input type="button" value="&#x274c;" class="red-cross">
+      <div class="center-content">
+        <div class="center-left"></div>
         <div>
-            <input type="button" value="RULES">
-            
+          <div class="center-mid">
+            <div class="winner-data">
+                <h1>YOU WIN</h1>
+                <p>AGAINST PC</p>
+            </div>
+            <input type="button" value="PLAY AGIAN"  class="center-btn pa-btn"/>
+            <input type="button" value="REPLAY"  class="center-btn rp-btn"/>
+          </div>
+          <div class="center-right"></div>
         </div>
-        <div class="rules-display">
-            <h1>Game Rules</h1>
-            <ul class="rules-lists">
-                <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
-                <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
-                <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
-                <li>If both players lay down the same hand, each player lays down another hand</li>
-            </ul>
-        </div>
-        
-        <input type="button" value="NEXT">
+        <div></div>
+      </div>
 
-</div>
-        </div>
+      <div class="display-rules">
+        <input type="button" value="X" class="red-cross" />
+        <h1>Game Rules</h1>
+        <ul class="rules-lists">
+          <li>
+            Rock beats scissors, scissors beat paper, and paper beats rock.
+          </li>
+          <li>
+            Agree ahead of time whether you’ll count off “rock, paper, scissors,
+            shoot” or just “rock, paper, scissors.”
+          </li>
+          <li>
+            Use rock, paper, scissors to settle minor decisions or simply play
+            to pass the time
+          </li>
+          <li>
+            If both players lay down the same hand, each player lays down
+            another hand
+          </li>
+        </ul>
+      </div>
+      <div class="bottom-right-btns">
+        
+          <div class="rules-btn">
+              <input type="button" value="RULES"class='B-btns rb' />
+            </div>
+            <div class="next-btn">
+              <input type="button" value="NEXT" class='B-btns nb'/>
+            </div>
+      </div>
     </container>
-    
-</body>
+  </body>
 </html>

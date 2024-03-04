@@ -2,13 +2,22 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+:root{
+    --white-color:white;
+ --border-color:white;
+ --grey-color:rgba(101, 101, 101, 1);
+
+--rules-bg-color:rgba(0, 68, 41, 1);
+
 }
 body{
     background: rgba(140, 196, 97, 1);
 }
 
 .top{
-    border:2px solid white;
+    border:2px solid var(--border-color);
     margin: 0 auto;
     width: 500px;
     border-radius: 10px;
@@ -21,20 +30,144 @@ body{
 .left-list{
     font-size: 1.5em;
     list-style-type: none;
+    color: var(--white-color);
 }
 .right{
     display:flex;
 }
 
-.top-right-box1.top-right-box2{
-    background-color: white;
+.top-right-box1,.top-right-box2{
+    background-color: var(--white-color);
+    text-align: center;
+    border-radius: 10px;
+    padding: .3em;
+    width: 80px;
+    color: var(--grey-color);
+    letter-spacing: 1.5px;
+    font-size: 12px;
+    margin: .2em;
+    
+}
+.comp-score-no,.your-score-no{
+    font-size: xx-large;
+    font-weight: 700;
+    color: black;
+    margin: 5px;
+}
+.top-right-box1{
+    background-color: var(--white-color);
     text-align: center;
     border-radius: 10px;
     padding: .3em;
 }
-.top-right-box1{
-    background-color: white;
+/* center part  */
+
+.center-content{
+    margin: 10%;
+    display: flex;
+    justify-content: center;
+    gap:50px;
     text-align: center;
+    color: white;
+}
+.winner-data{
+    margin: 10px;
+    font-size: large;
+    font-weight: 800;
+}
+.winner-data>p{
+    letter-spacing: 2px;
+}
+
+.center-btn{
+    padding: 12px;
+    border: none;
     border-radius: 10px;
-    padding: .3em;
+    font-weight: 800;
+    letter-spacing: 2px;
+    width: 150px;
+    font-size: medium;
+    color: var(--grey-color);
+    background-color: var(--white-color);
+}
+
+.rp-btn{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+/* Bottom buttons (rule and next) */
+.display-rules{
+    position: absolute;
+    right: 20px;
+    bottom: 80px;
+    background-color: var(--rules-bg-color);
+    border: 7px solid var(--border-color);
+    border-radius: 13px;
+    color: var(--white-color);
+    width: 320px;
+    margin: 0 auto; 
+    display: none;
+}
+
+.red-cross{
+    cursor: pointer;
+    position: absolute;
+    right: -30px;
+    top:-40px;
+    border: 6px solid var(--border-color);
+    background-color: red;
+    color: white;
+    width: 50px;
+    margin: 10px;
+font-weight: bolder;
+font-size: xx-large;
+border-radius: 50%;
+}
+.display-rules>h1{
+    margin-top: 10px;
+    text-align: center;
+}
+.rules-lists{
+    margin: 20px;
+    list-style-type: square;
+}
+.rules-lists>li{
+    margin: 10px;
+}
+.rules-lists>li::marker{
+    color: yellow;
+    font-size: 20px;
+}
+
+.bottom-right-btns{
+    position: absolute;
+    right: 1em;
+    bottom: 1em;
+    display: flex;
+    gap:20px
+}
+
+
+.B-btns{
+    padding: 10px 30px;
+    border:3px solid var(--white-color);
+     border-radius:10px;
+     background: none;
+     cursor: pointer;
+        color: var(--white-color);
+     letter-spacing: 5px;
+     font-weight: 600;
+     font-size: large;
+}
+
+.nb{
+    display: none;
 }
