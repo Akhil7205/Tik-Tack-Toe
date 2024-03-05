@@ -64,7 +64,9 @@ body{
 
 /* left-div-circle */
 
-
+div{
+    display: flex;
+}
 /* winner-name */
 .center-content{
     margin: 10%;
