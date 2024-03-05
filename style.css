@@ -66,6 +66,8 @@ body{
 
 div{
     display: flex;
+    columns: sd
+    ;
 }
 /* winner-name */
 .center-content{
