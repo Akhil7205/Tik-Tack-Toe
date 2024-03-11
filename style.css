@@ -64,11 +64,13 @@ body{
 
 /* left-div-circle */
 
-div{
-    display: flex;
-    columns: sd
-    ;
+.center-right{
+width: 100px;
+border-radius: 50%;
+
 }
+
+
 /* winner-name */
 .center-content{
     margin: 10%;
@@ -103,9 +105,7 @@ div{
     display: none;
 }
 
-
 /* right-div-circle */
-
 
 
 
